@@ -12,6 +12,8 @@ assert run("45 - 90").output == "-45"
 assert run("2 / 4").exit_status == 0
 # Checks that the program fails (correctly errors) for input "1 @ 1"
 assert run("1 [ 1").exit_status != 0
+# Checks that the program outputs "2" for an input " 8 / 4"
+assert run("8 / 4").output == "2"
 ###
 
 print("All tests passed!")
